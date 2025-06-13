@@ -1222,7 +1222,7 @@ const test2Questions = [
         ],
         correctAnswer: [1],
         explanation: 'OS Login allows you to manage SSH access to Compute Engine instances using IAM roles. It simplifies user management by linking SSH keys to Google identities, enabling centralized control over who can access instances without manually distributing or managing SSH keys on each VM.',
-        resourceLink: 'https://cloud.google.com/compute/docs/os-login/overview'
+        resourceLink: 'https://cloud.google.com/compute/docs/oslogin'
     },
     {
         id: 't2q45',

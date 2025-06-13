@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { callGeminiAPI } from '../services/geminiService';
 
 const Test = ({ questions, onTestSubmit, onBackToSelection, testMode }) => {
@@ -14,6 +14,10 @@ const Test = ({ questions, onTestSubmit, onBackToSelection, testMode }) => {
     const [timeLeft, setTimeLeft] = useState(3600); // 1 hour in seconds
     const [elaboratedExplanation, setElaboratedExplanation] = useState('');
     const [showFeedback, setShowFeedback] = useState({});
+
+    const handleSubmitTest = useCallback(() => {
+        onTestSubmit(userAnswers);
+    }, [onTestSubmit, userAnswers]);
 
     // Validate questions array
     useEffect(() => {
@@ -39,7 +43,7 @@ const Test = ({ questions, onTestSubmit, onBackToSelection, testMode }) => {
 
             return () => clearInterval(timer);
         }
-    }, [testMode]);
+    }, [testMode, handleSubmitTest]);
 
     const formatTime = (seconds) => {
         const minutes = Math.floor(seconds / 60);
@@ -85,10 +89,6 @@ const Test = ({ questions, onTestSubmit, onBackToSelection, testMode }) => {
         
         const explanation = await callGeminiAPI(prompt);
         setElaboratedExplanation(explanation);
-    };
-
-    const handleSubmitTest = () => {
-        onTestSubmit(userAnswers);
     };
 
     // Guard against undefined questions

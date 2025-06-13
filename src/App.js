@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import TestSelection from './components/TestSelection';
 import Test from './components/Test';
@@ -7,7 +7,6 @@ import { questionsData } from './data/questions';
 
 function App() {
     const [currentView, setCurrentView] = useState('selection');
-    const [selectedTest, setSelectedTest] = useState(null);
     const [testMode, setTestMode] = useState(null);
     const [userAnswers, setUserAnswers] = useState(null);
     const [score, setScore] = useState(null);
@@ -29,7 +28,6 @@ function App() {
                 return;
             }
 
-            setSelectedTest(testKey);
             setTestMode(mode);
             setCurrentQuestions(questions);
             setCurrentView('test');
@@ -64,7 +62,6 @@ function App() {
 
     const handleBackToSelection = () => {
         setCurrentView('selection');
-        setSelectedTest(null);
         setTestMode(null);
         setUserAnswers(null);
         setScore(null);
