@@ -129,12 +129,6 @@ const Test = ({ questions, onTestSubmit, onBackToSelection, testMode }) => {
         );
     }
 
-    const isAnswerCorrect = (questionId, answer) => {
-        if (!answer) return null;
-        const question = questions.find(q => q.id === questionId);
-        return JSON.stringify(question.correctAnswer.sort()) === JSON.stringify(answer.sort());
-    };
-
     const getFeedbackIcon = (isCorrect) => {
         if (isCorrect === null) return null;
         return isCorrect ? (
