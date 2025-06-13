@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# My GCP Exam App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application built with Create React App and Tailwind CSS for GCP exam preparation.
+
+## Features
+
+- Modern React application with Tailwind CSS
+- Multiple test modes:
+  - Practice Tests: Full-length practice exams
+  - Quick Practice: Random questions for quick review
+  - Review Mode: Focus on specific topics
+- Interactive UI with immediate feedback
+- Real-time answer validation
+- Detailed explanations with AI-powered elaboration
+- Timer for exam mode
+- Automated testing setup
+- Continuous Deployment with GitHub Actions
+- Deployed to GitHub Pages
+
+## Test Modes
+
+### Practice Tests
+- Full-length practice exams
+- Timer to simulate real exam conditions
+- Score calculation at the end
+- Review of all answers
+
+### Quick Practice
+- Random questions from all topics
+- Immediate feedback on answers
+- Detailed explanations
+- Option to get AI-elaborated explanations
+
+### Review Mode
+- Focus on specific topics
+- Practice at your own pace
+- Immediate feedback
+- Detailed explanations
+
+## Prerequisites
+
+- Node.js (v18 or higher)
+- npm (comes with Node.js)
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/pavithrakamath/my-gcp-exam-app.git
+cd my-gcp-exam-app
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000).
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
+Builds the app for production to the `build` folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This application is automatically deployed to GitHub Pages using GitHub Actions. The deployment process:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Runs on every push to the `main` branch
+2. Installs dependencies
+3. Runs tests
+4. Builds the application
+5. Deploys to GitHub Pages
 
-### `npm run eject`
+The application is available at: [https://pavithrakamath.github.io/my-gcp-exam-app](https://pavithrakamath.github.io/my-gcp-exam-app)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- Tailwind CSS
+- GitHub Actions
+- GitHub Pages
+- Gemini API for AI-powered explanations
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the MIT License.
