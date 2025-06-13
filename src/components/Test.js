@@ -259,6 +259,21 @@ const Test = ({ questions, onTestSubmit, onBackToSelection, testMode }) => {
                         )}
                     </div>
                     <p className="text-gray-700 mb-4">{currentQuestion.explanation}</p>
+                    {currentQuestion.resourceLink && (
+                        <div className="mb-4">
+                            <a 
+                                href={currentQuestion.resourceLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:text-blue-800 flex items-center"
+                            >
+                                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                Learn More
+                            </a>
+                        </div>
+                    )}
                     <button
                         onClick={handleElaborateExplanation}
                         className="text-blue-600 hover:text-blue-800 flex items-center"
