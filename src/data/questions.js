@@ -8,9 +8,9 @@ const test1Questions = [
             'Google App Engine (Standard Environment)',
             'Cloud Functions'
         ],
-        correctAnswer: [2], // Index of the correct option (0-based)
+        correctAnswer: [2],
         explanation: 'Google App Engine (Standard Environment) is a fully managed platform-as-a-service (PaaS) that offers automatic scaling, high availability, and zero-server management, making it ideal for web applications with varying traffic. While GCE with MIGs and GKE can provide scaling, they require more operational overhead. Cloud Functions are suitable for event-driven, short-lived functions, not a full web application.',
-        resourceLink: 'https://cloud.google.com/appengine/docs/standard/'
+        resourceLink: 'https://cloud.google.com/appengine/docs/the-appengine-environments'
     },
     {
         id: 't1q2',
@@ -75,7 +75,7 @@ const test1Questions = [
         ],
         correctAnswer: [1],
         explanation: 'Managed Instance Groups (MIGs) with autohealing are designed to maintain high availability and reliability for applications. If an instance in a MIG becomes unresponsive or stops, the MIG automatically recreates it, making it suitable for fault-tolerant batch processing.',
-        resourceLink: 'https://cloud.google.com/compute/docs/instance-groups/autohealing'
+        resourceLink: 'https://cloud.google.com/compute/docs/instance-groups/autohealing-instances-in-migs'
     },
     {
         id: 't1q7',
@@ -114,7 +114,7 @@ const test1Questions = [
         ],
         correctAnswer: [2],
         explanation: 'Cloud Monitoring (formerly Stackdriver Monitoring) provides comprehensive monitoring for Google Cloud resources. It collects metrics, events, and metadata, allowing you to create custom dashboards, set up alerts, and gain insights into the performance and health of your services, including Compute Engine instances.',
-        resourceLink: 'https://cloud.google.com/monitoring/docs/overview'
+        resourceLink: 'https://cloud.google.com/monitoring/docs/monitoring-overview'
     },
     {
         id: 't1q10',
@@ -231,7 +231,7 @@ const test1Questions = [
         ],
         correctAnswer: [1],
         explanation: 'App Engine Flexible Environment allows you to deploy applications in Docker containers, giving you more control over the runtime than App Engine Standard. It still provides automatic scaling and instance management, offering a good balance between flexibility and managed services.',
-        resourceLink: 'https://cloud.google.com/appengine/docs/flexible/'
+        resourceLink: 'https://cloud.google.com/appengine/docs/flexible'
     },
     {
         id: 't1q19',
@@ -296,7 +296,7 @@ const test1Questions = [
         ],
         correctAnswer: [1],
         explanation: 'Google Cloud is organized into regions and zones. A region is a specific geographical location where you can host your resources. By selecting a specific region, you ensure that your data and resources reside within that geographic boundary, which is crucial for compliance.',
-        resourceLink: 'https://cloud.google.com/docs/geographies/regions-zones'
+        resourceLink: 'https://cloud.google.com/about/locations'
     },
     {
         id: 't1q24',
@@ -322,7 +322,7 @@ const test1Questions = [
         ],
         correctAnswer: [2],
         explanation: 'The Cloud SQL Proxy is a tool that allows you to connect to your Cloud SQL instances securely without having to whitelist IP addresses or configure SSL. It uses a secure tunnel for communication, simplifying secure access from external environments.',
-        resourceLink: 'https://cloud.google.com/sql/docs/mysql/connect-external-applications#proxy'
+        resourceLink: 'https://cloud.google.com/sql/docs/mysql/connect-proxy'
     },
     {
         id: 't1q26',
@@ -335,7 +335,7 @@ const test1Questions = [
         ],
         correctAnswer: [2],
         explanation: 'Cloud Run is a fully managed, serverless platform for stateless containers. It automatically scales based on traffic, including scaling down to zero instances when there are no requests, which can lead to significant cost savings for intermittent workloads.',
-        resourceLink: 'https://cloud.google.com/run/docs/overview'
+        resourceLink: 'https://cloud.google.com/run/docs/overview/what-is-cloud-run'
     },
     {
         id: 't1q27',
@@ -348,7 +348,7 @@ const test1Questions = [
         ],
         correctAnswer: [2],
         explanation: 'The Principle of Least Privilege (PoLP) is a security best practice that dictates users, programs, or processes should only be granted the minimum permissions necessary to perform their intended function. This reduces the attack surface and potential damage from compromised credentials.',
-        resourceLink: 'https://cloud.google.com/security/docs/least-privilege'
+        resourceLink: 'https://cloud.google.com/storage/docs/access-control/best-practices-access-control'
     },
     {
         id: 't1q28',
@@ -426,7 +426,7 @@ const test1Questions = [
         ],
         correctAnswer: [1],
         explanation: 'In App Engine, you can deploy new versions of your application without immediately sending traffic to them. This allows you to test the new version in isolation before gradually migrating traffic from the previous version, ensuring a smooth rollout.',
-        resourceLink: 'https://cloud.google.com/appengine/docs/deploying-applications'
+        resourceLink: 'https://cloud.google.com/appengine/docs/standard/testing-and-deploying-your-app?tab=python#testing-on-app-engine'
     },
     {
         id: 't1q34',
@@ -452,7 +452,7 @@ const test1Questions = [
         ],
         correctAnswer: [2],
         explanation: 'In Cloud Monitoring, you create alerting policies to define conditions under which an alert should be triggered. For this scenario, you would set a metric threshold condition on the `compute.googleapis.com/instance/cpu/utilization` metric, specifying the threshold (80%) and the duration (5 minutes).',
-        resourceLink: 'https://cloud.google.com/monitoring/alerts/concepts-alerting-policies'
+        resourceLink: 'https://cloud.google.com/monitoring/alerts/docs/alerting-policies-overview'
     },
     {
         id: 't1q36',
@@ -465,7 +465,7 @@ const test1Questions = [
         ],
         correctAnswer: [1],
         explanation: 'Compute Engine allows you to create custom images from existing instances or disks. These custom images can then be shared with other projects, providing a standardized and efficient way to provision VMs with specific software and configurations.',
-        resourceLink: 'https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images'
+        resourceLink: 'https://cloud.google.com/compute/docs/images/managing-custom-images'
     },
     {
         id: 't1q37',
@@ -504,7 +504,7 @@ const test1Questions = [
         ],
         correctAnswer: [3],
         explanation: 'At-least-once delivery guarantees that a message will be delivered to a consumer at least one time. While it might result in duplicate processing (which needs to be handled by the consumer, e.g., through idempotency), it ensures no messages are lost, which is critical for many data processing pipelines.',
-        resourceLink: 'https://cloud.google.com/pubsub/docs/message-delivery'
+        resourceLink: 'https://cloud.google.com/pubsub/docs/subscriber'
     },
     {
         id: 't1q40',
@@ -517,7 +517,7 @@ const test1Questions = [
         ],
         correctAnswer: [1],
         explanation: 'Cloud Logging allows you to create aggregated sinks at the organization or folder level. This enables you to route logs from multiple projects under that organization or folder to a single destination (e.g., BigQuery dataset, Cloud Storage bucket, or Pub/Sub topic) for centralized analysis.',
-        resourceLink: 'https://cloud.google.com/logging/docs/export/configure_export_sinks#aggregated_exports'
+        resourceLink: 'https://cloud.google.com/logging/docs/export/aggregated-sinks'
     },
     {
         id: 't1q41',
@@ -530,7 +530,7 @@ const test1Questions = [
         ],
         correctAnswer: [2],
         explanation: 'Creating separate VPC networks for each environment (development, staging, production) provides the strongest network isolation. This ensures that resources in one environment cannot directly communicate with resources in another, enhancing security and preventing accidental cross-environment access.',
-        resourceLink: 'https://cloud.google.com/vpc/docs/vpc-networks'
+        resourceLink: 'https://cloud.google.com/vpc/docs/vpc'
     },
     {
         id: 't1q42',
@@ -543,7 +543,7 @@ const test1Questions = [
         ],
         correctAnswer: [1],
         explanation: 'For custom domains in App Engine, you can either use Google-managed SSL certificates (which are automated) or provide your own SSL certificate and corresponding private key. The question implies providing your own, which is a common scenario.',
-        resourceLink: 'https://cloud.google.com/appengine/docs/standard/setting-up-custom-domains#ssl_certificates'
+        resourceLink: 'https://cloud.google.com/appengine/docs/standard/getting-started/securing-custom-domains-with-ssl'
     },
     {
         id: 't1q43',
@@ -569,7 +569,7 @@ const test1Questions = [
         ],
         correctAnswer: [2],
         explanation: 'SSD Persistent Disk is designed for high-performance workloads that require high IOPS (Input/Output Operations Per Second) and throughput, such as databases and high-performance computing applications. Local SSDs offer even higher performance but are ephemeral and directly attached to the VM, not suitable for persistent database storage.',
-        resourceLink: 'https://cloud.google.com/compute/docs/disks#disk_types'
+        resourceLink: 'https://cloud.google.com/compute/docs/disks#disk-types'
     },
     {
         id: 't1q45',
@@ -582,7 +582,7 @@ const test1Questions = [
         ],
         correctAnswer: [1],
         explanation: 'The first step to manage your domain\'s DNS records with Cloud DNS is to create a "managed public zone." This zone represents your domain within Cloud DNS and allows you to add and manage record sets for it.',
-        resourceLink: 'https://cloud.google.com/dns/docs/zones/create-public-zones'
+        resourceLink: 'https://cloud.google.com/dns/docs/zones#create-a-public-zone'
     },
     {
         id: 't1q46',
@@ -595,7 +595,7 @@ const test1Questions = [
         ],
         correctAnswer: [1],
         explanation: 'The `Storage Object Viewer` role (roles/storage.objectViewer) grants read-only access to objects within Cloud Storage buckets. This allows users to view and download objects but prevents them from creating, updating, or deleting them, adhering to the principle of least privilege.',
-        resourceLink: 'https://cloud.google.com/storage/docs/access-control/iam-roles#storage-object-viewer'
+        resourceLink: 'https://cloud.google.com/storage/docs/access-control/iam-roles'
     },
     {
         id: 't1q47',
@@ -647,7 +647,7 @@ const test1Questions = [
         ],
         correctAnswer: [1],
         explanation: 'The Log Explorer in the Cloud Console provides a real-time interface to view, filter, and analyze logs as they are ingested into Cloud Logging. It\'s the most straightforward way to get a live view of your application logs.',
-        resourceLink: 'https://cloud.google.com/logging/docs/view/overview'
+        resourceLink: 'https://cloud.google.com/logging/docs/log-explorer'
     }
 ];
 
