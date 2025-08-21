@@ -1,4 +1,5 @@
 # My GCP Exam App
+[![Deploy React App](https://github.com/pavithrakamath/my-gcp-exam-app/actions/workflows/deploy.yml/badge.svg)](https://github.com/pavithrakamath/my-gcp-exam-app/actions/workflows/deploy.yml)
 
 A React application built with Create React App and Tailwind CSS for GCP exam preparation.
 
