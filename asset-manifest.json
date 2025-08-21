@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/my-gcp-exam-app/static/css/main.ac8fd2ca.css",
-    "main.js": "/my-gcp-exam-app/static/js/main.6d3d2a91.js",
+    "main.css": "/my-gcp-exam-app/static/css/main.fcaa8832.css",
+    "main.js": "/my-gcp-exam-app/static/js/main.6c807106.js",
     "static/js/453.b8d60113.chunk.js": "/my-gcp-exam-app/static/js/453.b8d60113.chunk.js",
     "index.html": "/my-gcp-exam-app/index.html",
-    "main.ac8fd2ca.css.map": "/my-gcp-exam-app/static/css/main.ac8fd2ca.css.map",
-    "main.6d3d2a91.js.map": "/my-gcp-exam-app/static/js/main.6d3d2a91.js.map",
+    "main.fcaa8832.css.map": "/my-gcp-exam-app/static/css/main.fcaa8832.css.map",
+    "main.6c807106.js.map": "/my-gcp-exam-app/static/js/main.6c807106.js.map",
     "453.b8d60113.chunk.js.map": "/my-gcp-exam-app/static/js/453.b8d60113.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac8fd2ca.css",
-    "static/js/main.6d3d2a91.js"
+    "static/css/main.fcaa8832.css",
+    "static/js/main.6c807106.js"
   ]
 }
