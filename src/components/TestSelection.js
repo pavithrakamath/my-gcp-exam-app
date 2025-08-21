@@ -75,6 +75,89 @@ const TestSelection = ({ onSelectTest }) => {
                             </button>
                         </div>
                     </div>
+
+                    <div className="bg-white rounded-lg shadow-md p-6">
+                        <h3 className="text-xl font-semibold mb-4">Practice Test 4</h3>
+                        <p className="text-gray-600 mb-4">
+                            Comprehensive test covering all aspects of Google Cloud Platform.
+                        </p>
+                        <div className="space-y-3">
+                            <button
+                                onClick={() => handleStartTest('test4', 'exam')}
+                                className="w-full bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors"
+                            >
+                                Start Exam Mode
+                            </button>
+                            <button
+                                onClick={() => handleStartTest('test4', 'practice')}
+                                className="w-full bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition-colors"
+                            >
+                                Start Practice Mode
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="bg-white rounded-lg shadow-md p-6">
+                        <h3 className="text-xl font-semibold mb-4">Practice Test 5</h3>
+                        <p className="text-gray-600 mb-4">
+                            Comprehensive test covering all aspects of Google Cloud Platform.
+                        </p>
+                        <div className="space-y-3">
+                            <button
+                                onClick={() => handleStartTest('test5', 'exam')}
+                                className="w-full bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors"
+                            >
+                                Start Exam Mode
+                            </button>
+                            <button
+                                onClick={() => handleStartTest('test5', 'practice')}
+                                className="w-full bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition-colors"
+                            >
+                                Start Practice Mode
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="bg-white rounded-lg shadow-md p-6">
+                        <h3 className="text-xl font-semibold mb-4">Practice Test 6</h3>
+                        <p className="text-gray-600 mb-4">
+                            Comprehensive test covering all aspects of Google Cloud Platform.
+                        </p>
+                        <div className="space-y-3">
+                            <button
+                                onClick={() => handleStartTest('test6', 'exam')}
+                                className="w-full bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors"
+                            >
+                                Start Exam Mode
+                            </button>
+                            <button
+                                onClick={() => handleStartTest('test6', 'practice')}
+                                className="w-full bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition-colors"
+                            >
+                                Start Practice Mode
+                            </button>
+                        </div>
+                    </div>
+                    <div className="bg-white rounded-lg shadow-md p-6">
+                        <h3 className="text-xl font-semibold mb-4">Practice Test 7</h3>
+                        <p className="text-gray-600 mb-4">
+                            Comprehensive test covering all aspects of Google Cloud Platform.
+                        </p>
+                        <div className="space-y-3">
+                            <button
+                                onClick={() => handleStartTest('test7', 'exam')}
+                                className="w-full bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors"
+                            >
+                                Start Exam Mode
+                            </button>
+                            <button
+                                onClick={() => handleStartTest('test7', 'practice')}
+                                className="w-full bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition-colors"
+                            >
+                                Start Practice Mode
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
